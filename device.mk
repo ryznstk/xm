@@ -476,6 +476,9 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors-service.xiaomi-multihal
 
 PRODUCT_PACKAGES += \
+    sensor-notifier
+
+PRODUCT_PACKAGES += \
     sensors.dynamic_sensor_hal \
     sensors.xiaomi.v2
 
@@ -536,7 +539,6 @@ PRODUCT_COPY_FILES += \
 <<<<<<< HEAD
 =======
 PRODUCT_PACKAGES += \
-    nonui-notifier \
     vendor.lineage.touch@1.0-service.xiaomi
 
 >>>>>>> e158d74 (peridot: Add nonui notifier)
