@@ -1,4 +1,7 @@
 # SettingsLib
 settingsdebug.instant.packages u:object_r:settingslib_prop:s0
+<<<<<<< HEAD
 
 sys.perf_mode_active           u:object_r:exported_system_prop:s0
+=======
+>>>>>>> 48992af (peridot: parts: sepolicy: Initial Sepolicy for Xiaomi parts)

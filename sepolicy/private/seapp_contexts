@@ -1,3 +1,6 @@
 user=system seinfo=platform name=org.lineageos.settings domain=devicesettings_app type=system_app_data_file
 user=system seinfo=platform isPrivApp=true name=org.lineageos.settings domain=devicesettings_app type=system_app_data_file levelFrom=all
+<<<<<<< HEAD
 user=bluetooth seinfo=default name=com.android.bluetooth domain=bluetooth type=bluetooth_data_file levelFrom=all isPrivApp=true
+=======
+>>>>>>> 48992af (peridot: parts: sepolicy: Initial Sepolicy for Xiaomi parts)
