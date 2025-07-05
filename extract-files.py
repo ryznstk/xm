@@ -19,6 +19,7 @@ from extract_utils.main import (
 
 namespace_imports = [
     'device/xiaomi/peridot',
+    'hardware/lineage/compat',
     'hardware/qcom-caf/sm8650',
     'hardware/qcom-caf/wlan',
     'hardware/xiaomi',
@@ -107,7 +108,7 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed(
             'android.hardware.graphics.allocator-V1-ndk.so',
             'android.hardware.graphics.allocator-V2-ndk.so'
-    ),
+        ),
     'odm/lib64/hw/camera.xiaomi.so': blob_fixup()
         .add_needed('libprocessgroup_shim.so')
         .replace_needed(
@@ -118,6 +119,8 @@ blob_fixups: blob_fixups_user_type = {
             'libtinyxml2.so',
             'libtinyxml2-v34.so'
     ),
+    'odm/lib64/hw/camera.xiaomi.so': blob_fixup()
+        .replace_needed('libui.so', 'libui-v34.so'),
     (
         'odm/lib64/camera/com.qti.actuator.peridot_aac_imx882_gt9764ber_wide_i_actuator.so',
         'odm/lib64/camera/com.qti.actuator.peridot_ofilm_imx882_aw86016csr_wide_ii_actuator.so',
@@ -232,7 +235,7 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed(
             'android.hardware.graphics.allocator-V1-ndk.so',
             'android.hardware.graphics.allocator-V2-ndk.so'
-    ),
+        ),
     'odm/lib64/com.qti.feature2.anchorsync.so': blob_fixup()
         .replace_needed(
             'android.hardware.graphics.allocator-V1-ndk.so',
