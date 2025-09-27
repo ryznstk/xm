@@ -315,6 +315,10 @@ PRODUCT_COPY_FILES += \
 
 $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_xiaomi_peridot)
 
+# KProfiles
+PRODUCT_PACKAGES += \
+    KProfiles
+
 # Keymint
 PRODUCT_PACKAGES += \
     android.hardware.authsecret-service.nxp \
