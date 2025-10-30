@@ -32,6 +32,9 @@ $(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
 # ART
 PRODUCT_ENABLE_UFFD_GC := true
 
+# Viper4AndroidFX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \

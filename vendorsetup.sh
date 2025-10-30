@@ -53,6 +53,21 @@ git clone https://github.com/ryznstk/packages_apps_LMOFreeforms.git packages/app
 
 rm -rf packages/apps/DepthWallpaperHelper
 
+<<<<<<< HEAD
+=======
+
+rm -rf packages/apps/XiaomiParts
+
+# ViperFX
+rm -rf packages/apps/ViPER4AndroidFX
+git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX.git packages/apps/ViPER4AndroidFX
+
+# KProfiles (fresh clone)
+echo "Cloning KProfiles..."
+rm -rf packages/apps/KProfiles
+git clone https://github.com/droidcore/packages_apps_KProfiles.git packages/apps/KProfiles
+
+>>>>>>> 6d00752 (v4a)
 cd system/sepolicy
 git fetch https://github.com/ryznstk/lunaris_system_sepolicy.git test
 git reset --hard FETCH_HEAD
