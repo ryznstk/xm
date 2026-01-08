@@ -118,6 +118,7 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8635
 KERNEL_LTO := thin
 TARGET_KERNEL_CONFIG := \
     gki_defconfig \
+    vendor/extra.config \
     vendor/pineapple_GKI.config \
     vendor/peridot_GKI.config
 
