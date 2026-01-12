@@ -79,5 +79,9 @@ ro.ril.fast.dormancy.rule=1
 ro.ril.fast.dormancy.timeout=3
 ro.mot.eri.losalert.delay=1000
 
+# Optimizer
+persist.sys.perf.scroll_opt=true
+persist.sys.perf.scroll_opt.heavy_app=1
+
 # Zygote
 ro.zygote.disable_gl_preload=true
