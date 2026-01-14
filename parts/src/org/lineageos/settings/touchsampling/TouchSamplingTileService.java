@@ -123,21 +123,19 @@ public class TouchSamplingTileService extends TileService {
     }
 
     private void registerTileUpdateReceiver() {
-    mTileUpdateReceiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            if ("org.lineageos.settings.touchsampling.ACTION_UPDATE_TILE".equals(intent.getAction())) {
-                Log.d(TAG, "Received tile update broadcast");
-                updateTileState();
+        mTileUpdateReceiver = new BroadcastReceiver() {
+            @Override
+            public void onReceive(Context context, Intent intent) {
+                if ("org.lineageos.settings.touchsampling.ACTION_UPDATE_TILE".equals(intent.getAction())) {
+                    Log.d(TAG, "Received tile update broadcast");
+                    updateTileState();
+                }
             }
-        }
-    };
+        };
 
-    IntentFilter filter = new IntentFilter();
-    filter.addAction("org.lineageos.settings.touchsampling.ACTION_UPDATE_TILE");
-    
-    // Fix: Explicitly set receiver visibility for Android 14+ (SDK 34+)
-    registerReceiver(mTileUpdateReceiver, filter, Context.RECEIVER_NOT_EXPORTED);
+        IntentFilter filter = new IntentFilter();
+        filter.addAction("org.lineageos.settings.touchsampling.ACTION_UPDATE_TILE");
+        registerReceiver(mTileUpdateReceiver, filter, Context.RECEIVER_NOT_EXPORTED);
     }
 
     /**
