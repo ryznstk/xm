@@ -227,6 +227,10 @@ PRODUCT_COPY_FILES += \
 # GameBar Performance Overlay
 $(call inherit-product, packages/apps/GameBar/gamebar.mk) 
 
+# HWUI
+TARGET_USES_VULKAN := true
+HWUI_COMPILE_FOR_PERF := true
+
 # Always preopt extracted APKs to prevent extracting out of the APK for gms modules
 PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
