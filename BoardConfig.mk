@@ -63,6 +63,10 @@ ART_BUILD_HOST_NDEBUG := true
 ART_BUILD_HOST_DEBUG := false
 endif
 
+WITH_DEXPREOPT := true
+DEX_PREOPT_DEFAULT := generate-vdex-and-image
+WITH_DEXPREOPT_DEBUG_INFO := false
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := peridot
 TARGET_NO_BOOTLOADER := true
