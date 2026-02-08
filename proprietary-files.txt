@@ -1732,6 +1732,7 @@ vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqcbor.so
 vendor/lib64/libqtikeymaster4.so
 vendor/lib64/libqtikeymint.so
+vendor/bin/KmInstallKeybox
 
 # Listen
 odm/lib64/vendor.xiaomi.hardware.mediaeventgatherservice-V1-ndk.so
