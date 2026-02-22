@@ -26,6 +26,9 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 # Call the MiuiCamera setup
 $(call inherit-product-if-exists, device/xiaomi/peridot-miuicamera/device.mk)
 
+$(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
+$(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
+
 # ART
 PRODUCT_ENABLE_UFFD_GC := true
 
