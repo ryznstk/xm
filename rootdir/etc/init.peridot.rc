@@ -231,6 +231,20 @@ on post-fs-data
     #QCC mode configuration
     setprop vendor.qti.qcc.oper.mode 4 
 
+    # Allow Power HAL to access CPU clusters 0, 3, and 7
+    chown system system /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
+    chown system system /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
+    chown system system /sys/devices/system/cpu/cpufreq/policy3/scaling_min_freq
+    chown system system /sys/devices/system/cpu/cpufreq/policy3/scaling_max_freq
+    chown system system /sys/devices/system/cpu/cpufreq/policy7/scaling_min_freq
+    chown system system /sys/devices/system/cpu/cpufreq/policy7/scaling_max_freq
+    chmod 0664 /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
+    chmod 0664 /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
+    chmod 0664 /sys/devices/system/cpu/cpufreq/policy3/scaling_min_freq
+    chmod 0664 /sys/devices/system/cpu/cpufreq/policy3/scaling_max_freq
+    chmod 0664 /sys/devices/system/cpu/cpufreq/policy7/scaling_min_freq
+    chmod 0664 /sys/devices/system/cpu/cpufreq/policy7/scaling_max_freq
+
 #Enable WLAN SSR recovery
 on property:persist.vendor.ssr.restart_level=ALL_ENABLE
     write /sys/kernel/cnss/recovery 3
