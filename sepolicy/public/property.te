@@ -1,6 +1,2 @@
 # SettingsLib
-<<<<<<< HEAD
 system_public_prop(settingslib_prop)
-=======
-system_public_prop(settingslib_prop)
->>>>>>> 48992af (peridot: parts: sepolicy: Initial Sepolicy for Xiaomi parts)
