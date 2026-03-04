@@ -1598,6 +1598,9 @@ odm/etc/display/LUT0.txt
 odm/etc/display/LUT1.txt
 odm/etc/display/LUT2.txt
 
+# Dolby (codec2) - from pdx245
+vendor/bin/hw/vendor.dolby.media.c2@1.0-service|893132de163868f23a5685b9457b2e105e28d821
+
 # Dolby music
 odm/etc/dolby/dax-default-spatializer.xml
 odm/etc/dolby/dax-default.xml
@@ -1749,7 +1752,6 @@ vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so
 odm/etc/surfaceflinger/dolby_vision.cfg
 odm/vendor/etc/dolby_vision.cfg
 odm/vendor/persist/display/dolby_vision.cfg
-vendor/bin/hw/vendor.dolby.media.c2@1.0-service
 vendor/bin/hw/vendor.qti.media.c2@1.0-service
 vendor/bin/hw/vendor.qti.media.c2audio@1.0-service
 vendor/etc/init/init.qti.media.rc
