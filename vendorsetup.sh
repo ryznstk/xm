@@ -70,7 +70,7 @@ git reset --hard FETCH_HEAD
 croot
 
 cd hardware/qcom-caf/common
-git fetch https://github.com/LineageOS/android_hardware_qcom-caf_common lineage-23.2
+git fetch https://github.com/ryznstk/android_hardware_qcom-caf_common lineage-23.2
 git reset --hard FETCH_HEAD
 croot
 
