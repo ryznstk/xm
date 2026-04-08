@@ -38,16 +38,6 @@ echo "Cloning Gamebar tree..."
 rm -rf packages/apps/GameBar
 git clone https://github.com/ryznstk/packages_apps_GameBar.git packages/apps/GameBar
 
-# LMO
-echo "fetching LMOfreeroam tree..."
-cd packages/apps/LMOFreeform
-git fetch https://github.com/ryznstk/packages_apps_LMOFreeforms 16.2
-git reset --hard FETCH_HEAD
-croot
-
-rm -rf packages/apps/DepthWallpaperHelper
-
-
 rm -rf packages/apps/XiaomiParts
 
 # ViperFX
