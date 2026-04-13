@@ -44,6 +44,13 @@ rm -rf packages/apps/XiaomiParts
 rm -rf packages/apps/ViPER4AndroidFX
 git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX.git packages/apps/ViPER4AndroidFX
 
+# LMO
+echo "fetching LMOfreeroam tree..."
+cd packages/apps/LMOFreeform
+git fetch https://github.com/ryznstk/packages_apps_LMOFreeforms test
+git reset --hard FETCH_HEAD
+croot
+
 # KProfiles (fresh clone)
 echo "Cloning KProfiles..."
 rm -rf packages/apps/KProfiles
