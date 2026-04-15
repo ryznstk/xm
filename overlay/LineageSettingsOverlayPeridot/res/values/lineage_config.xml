@@ -4,6 +4,6 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
-    <!-- Default for Settings.Global.DEVICE_NAME $1=MODEL-->
-    <string name="def_device_name_simple">Redmi Turbo 3</string>
+    <!-- Show battery cycle count -->
+    <bool name="config_show_battery_cycle_count">true</bool>
 </resources>
