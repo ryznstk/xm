@@ -17,7 +17,7 @@ rm -rf kernel/xiaomi/sm8635-devicetrees
 git clone -b lineage-23.2 --depth 1 https://github.com/ryznstk/android_kernel_xiaomi_sm8635-devicetrees.git kernel/xiaomi/sm8635-devicetrees
 
 cd kernel/xiaomi/sm8635
-https://raw.githubusercontent.com/ryznstk/ReSukiSU/refs/heads/main/kernel/setup.sh | bash -s susfs-ksud
+curl -LSs https://raw.githubusercontent.com/ryznstk/ReSukiSU/refs/heads/main/kernel/setup.sh | bash -s susfs-ksud
 croot
 
 # Hardware xiaomi (fresh clone)
