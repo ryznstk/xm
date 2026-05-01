@@ -14,7 +14,7 @@ rm -rf kernel/xiaomi/sm8635-modules
 git clone -b lineage-23.2 --depth 1 https://github.com/ryznstk/kernel_xiaomi_sm8635-modules.git kernel/xiaomi/sm8635-modules
 
 rm -rf kernel/xiaomi/sm8635-devicetrees
-git clone -b lineage-23.2 --depth 1 https://github.com/LineageOS/android_kernel_xiaomi_sm8635-devicetrees.git kernel/xiaomi/sm8635-devicetrees
+git clone -b lineage-23.2 --depth 1 https://github.com/ryznstk/kernel_xiaomi_sm8635-devicetrees.git kernel/xiaomi/sm8635-devicetrees
 
 # Hardware xiaomi (fresh clone)
 echo "Cloning hardware xiaomi source..."
@@ -61,15 +61,15 @@ git clone https://github.com/ryznstk/packages_apps_KProfiles.git packages/apps/K
 #git reset --hard FETCH_HEAD
 #croot
 
-cd frameworks/base
-git fetch https://github.com/ryznstk/evo_frameworks_base.git bq2
-git reset --hard FETCH_HEAD
-croot
+#cd frameworks/base
+#git fetch https://github.com/ryznstk/evo_frameworks_base.git bq2
+#git reset --hard FETCH_HEAD
+#croot
 
-cd packages/apps/Evolver
-git fetch https://github.com/ryznstk/packages_apps_Evolver.git bq2
-git reset --hard FETCH_HEAD
-croot
+#cd packages/apps/Evolver
+#git fetch https://github.com/ryznstk/packages_apps_Evolver.git bq2
+#git reset --hard FETCH_HEAD
+#croot
 
 cd device/qcom/sepolicy_vndr/sm8650
 git fetch https://github.com/LineageOS/android_device_qcom_sepolicy_vndr.git lineage-23.2-caf-sm8650
