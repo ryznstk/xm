@@ -56,20 +56,10 @@ echo "Cloning KProfiles..."
 rm -rf packages/apps/KProfiles
 git clone https://github.com/ryznstk/packages_apps_KProfiles.git packages/apps/KProfiles
 
-#cd system/sepolicy
-#git fetch https://github.com/ryznstk/system_sepolicy.git bq2
-#git reset --hard FETCH_HEAD
-#croot
-
-#cd frameworks/base
-#git fetch https://github.com/ryznstk/evo_frameworks_base.git bq2
-#git reset --hard FETCH_HEAD
-#croot
-
-#cd packages/apps/Evolver
-#git fetch https://github.com/ryznstk/packages_apps_Evolver.git bq2
-#git reset --hard FETCH_HEAD
-#croot
+cd system/sepolicy
+git fetch https://github.com/ryznstk/inf_system_sepolicy.git 16
+git reset --hard FETCH_HEAD
+croot
 
 cd device/qcom/sepolicy_vndr/sm8650
 git fetch https://github.com/LineageOS/android_device_qcom_sepolicy_vndr.git lineage-23.2-caf-sm8650
