@@ -339,7 +339,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
 
 # Lineage-Priv
--include vendor/evolution-priv/keys/keys.mk
+-include vendor/lineage-priv/keys/keys.mk
 
 # Lineage Health
 PRODUCT_PACKAGES += \
