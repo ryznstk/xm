@@ -74,7 +74,13 @@ git clone https://github.com/ryznstk/packages_apps_KProfiles.git packages/apps/K
 #git reset --hard FETCH_HEAD
 #croot
 
+rm -rf external/steam-audio
 git clone -b lineage-23.2 https://github.com/AxionAOSP/android_external_steam-audio.git external/steam-audio
+
+cd external/pffft
+git fetch https://github.com/AxionAOSP/android_external_pffft lineage-23.2
+git reset --hard FETCH_HEAD
+croot
 
 cd device/qcom/sepolicy_vndr/sm8650
 git fetch https://github.com/LineageOS/android_device_qcom_sepolicy_vndr.git lineage-23.2-caf-sm8650
