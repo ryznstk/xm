@@ -44,8 +44,6 @@ rm -rf packages/apps/XiaomiParts
 rm -rf packages/apps/ViPER4AndroidFX
 git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX.git packages/apps/ViPER4AndroidFX
 
-rm -rf packages/apps/AxionFx
-
 # LMO
 echo "fetching LMOfreeroam tree..."
 cd packages/apps/LMOFreeform
@@ -58,10 +56,10 @@ echo "Cloning KProfiles..."
 rm -rf packages/apps/KProfiles
 git clone https://github.com/ryznstk/packages_apps_KProfiles.git packages/apps/KProfiles
 
-#cd system/sepolicy
-#git fetch https://github.com/ryznstk/system_sepolicy.git bq2
-#git reset --hard FETCH_HEAD
-#croot
+cd system/sepolicy
+git fetch https://github.com/ryznstk/android_system_sepolicys 16.0
+git reset --hard FETCH_HEAD
+croot
 
 #cd frameworks/base
 #git fetch https://github.com/ryznstk/evo_frameworks_base.git bq2
@@ -73,8 +71,6 @@ git clone https://github.com/ryznstk/packages_apps_KProfiles.git packages/apps/K
 #git reset --hard FETCH_HEAD
 #croot
 
-rm -rf external/steam-audio
-
 cd device/qcom/sepolicy_vndr/sm8650
 git fetch https://github.com/LineageOS/android_device_qcom_sepolicy_vndr.git lineage-23.2-caf-sm8650
 git reset --hard FETCH_HEAD
@@ -85,15 +81,13 @@ git fetch https://github.com/LineageOS/android_hardware_qcom-caf_common lineage-
 git reset --hard FETCH_HEAD
 croot
 
-rm -rf vendor/lineage-priv
-
 # Refresh signing keys
-if [ -d vendor/evolution-priv/keys ]; then
+if [ -d vendor/lineage-priv/keys ]; then
   echo "Removing existing signing keys..."
-  rm -rf vendor/evolution-priv/keys
+  rm -rf vendor/lineage-priv/keys
 fi
 echo "Cloning fresh signing keys..."
-git clone https://github.com/droidcore/private_key.git -b evo vendor/evolution-priv/keys
+git clone https://github.com/droidcore/private_key.git -b main vendor/lineage-priv/keys
 
 # Always back to root at the end
 if command -v croot &>/dev/null; then
