@@ -44,7 +44,7 @@ rm -rf packages/apps/XiaomiParts
 rm -rf packages/apps/ViPER4AndroidFX
 git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX.git packages/apps/ViPER4AndroidFX
 
-rm -rf packages/apps/AxionFX
+rm -rf packages/apps/AxionFx
 git clone https://github.com/AxionAOSP/android_packages_apps_AxionFx.git packages/apps/AxionFx
 
 # LMO
