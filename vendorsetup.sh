@@ -45,7 +45,6 @@ rm -rf packages/apps/ViPER4AndroidFX
 git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX.git packages/apps/ViPER4AndroidFX
 
 rm -rf packages/apps/AxionFx
-git clone https://github.com/AxionAOSP/android_packages_apps_AxionFx.git packages/apps/AxionFx
 
 # LMO
 echo "fetching LMOfreeroam tree..."
@@ -58,11 +57,6 @@ croot
 echo "Cloning KProfiles..."
 rm -rf packages/apps/KProfiles
 git clone https://github.com/ryznstk/packages_apps_KProfiles.git packages/apps/KProfiles
-
-cd hardware/interfaces
-git fetch https://github.com/ryznstk/hardware_interfaces bq2
-git reset --hard FETCH_HEAD
-croot
 
 #cd system/sepolicy
 #git fetch https://github.com/ryznstk/system_sepolicy.git bq2
@@ -80,12 +74,6 @@ croot
 #croot
 
 rm -rf external/steam-audio
-git clone -b lineage-23.2 https://github.com/AxionAOSP/android_external_steam-audio.git external/steam-audio
-
-cd external/pffft
-git fetch https://github.com/AxionAOSP/android_external_pffft lineage-23.2
-git reset --hard FETCH_HEAD
-croot
 
 cd device/qcom/sepolicy_vndr/sm8650
 git fetch https://github.com/LineageOS/android_device_qcom_sepolicy_vndr.git lineage-23.2-caf-sm8650
