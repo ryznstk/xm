@@ -200,7 +200,7 @@ vendor.netflix.bsp_rev=Q8635-38577-1
 
 # Optimizer
 persist.sys.perf.scroll_opt=true
-persist.sys.perf.scroll_opt.heavy_app=2
+persist.sys.perf.scroll_opt.heavy_app=1
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
